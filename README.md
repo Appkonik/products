@@ -15,20 +15,11 @@ Publish migrations via:
 php artisan vendor:publish --provider="Appkonik\Products\ProductsServiceProvider" --tag="migrations" 
 ```
 
-```php
-This package includes 4 basic CRUD methods:
-GET, ADD, UPDATE, DELETE
-```
-
 ### Testing
 
 ```bash
 composer test
 ```
-
-### Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
 
 ## Contributing
 
