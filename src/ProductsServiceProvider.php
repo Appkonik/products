@@ -21,11 +21,16 @@ class ProductsServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('products.php'),
+                __DIR__ . '/../config/config.php' => config_path('products.php'),
             ], 'config');
 
             $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
-
+            if (!class_exists('CreateProductsTable')) {
+                $this->publishes([
+                    __DIR__ . '/../database/migrations/2023_01_31_000001_create_products_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_products_table.php'),
+                    // you can add any number of migrations here
+                ], 'migrations');
+            }
             // Publishing the views.
             /*$this->publishes([
                 __DIR__.'/../resources/views' => resource_path('views/vendor/products'),
