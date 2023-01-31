@@ -1,9 +1,4 @@
-# Very short description of the package
-
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/appkonik/products.svg?style=flat-square)](https://packagist.org/packages/appkonik/products)
-[![Total Downloads](https://img.shields.io/packagist/dt/appkonik/products.svg?style=flat-square)](https://packagist.org/packages/appkonik/products)
-![GitHub Actions](https://github.com/appkonik/products/actions/workflows/main.yml/badge.svg)
-
+# Short Description
 This package is a basic implementation of Products feature for Laravel e-commerce stores
 ## Installation
 
