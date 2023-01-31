@@ -5,7 +5,7 @@ use Exception;
 
 class Products
 {
-    public function get($id): string|Product
+    public function get(int $id): string|Product
     {
         try {
             $product = Product::findOrFail($id);
@@ -15,7 +15,7 @@ class Products
         }
     }
 
-    public function add($data): string|Product
+    public function add(array $data): string|Product
     {
         try {
             $product = new Product();
@@ -26,7 +26,7 @@ class Products
         }
     }
 
-    public function update($id, $data): string|Product
+    public function update(int $id, array $data): string|Product
     {
         try {
             $product = Product::findOrFail($id);
@@ -37,7 +37,7 @@ class Products
         }
     }
 
-    public function remove($id): bool|string
+    public function remove(int $id): bool|string
     {
         try {
             $product = Product::findOrFail($id);

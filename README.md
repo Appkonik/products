@@ -4,8 +4,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/appkonik/products.svg?style=flat-square)](https://packagist.org/packages/appkonik/products)
 ![GitHub Actions](https://github.com/appkonik/products/actions/workflows/main.yml/badge.svg)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
-
+This package is a basic implementation of Products feature for Laravel e-commerce stores
 ## Installation
 
 You can install the package via composer:
@@ -17,7 +16,13 @@ composer require appkonik/products
 ## Usage
 
 ```php
-// Usage description here
+Publish migrations via:
+php artisan vendor:publish --provider="Appkonik\Products\ProductsServiceProvider" --tag="migrations" 
+```
+
+```php
+This package includes 4 basic CRUD methods:
+GET, ADD, UPDATE, DELETE
 ```
 
 ### Testing
@@ -46,7 +51,3 @@ If you discover any security related issues, please email info@appkonik.com inst
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-
-## Laravel Package Boilerplate
-
-This package was generated using the [Laravel Package Boilerplate](https://laravelpackageboilerplate.com).
